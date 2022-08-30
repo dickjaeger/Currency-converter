@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/form.css">
+        <script defer src="js/main.js"></script>
+        <title>Kantor Walut</title>
+    </head>
+    <body>
+        <form class="form js-form">
+            <h1 class="form__header">Kantor walut</h1>
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Kursy walut</legend>
+                <p class="form__paragraph">
+                    Wprowadź aktualny kurs waluty, którą chcesz przeliczać.
+                </p>
+                <ul class="form__list">
+                    <li class="form__listItem">
+                        <label>
+                            1 EUR =<input class="form__field js-exchangeRateEUR"
+                                type="number" name="exchangeRateEUR"
+                                value="4.50" step="0.01" min="0">PLN
+                        </label>
+                    </li>
+                    <li class="form__listItem">
+                        <label>
+                            1 USD =<input class="form__field js-exchangeRateUSD"
+                                type="number" name="exchangeRateUSD"
+                                value="4.00" step="0.01" min="0">PLN
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Kalkulator walut</legend>
+                <p class="form__paragraph">
+                    Chcę wymienić
+                    <select class="form__field js-currency1">
+                        <option>EUR</option>
+                        <option>USD</option>
+                        <option>PLN</option>
+                    </select>
+                    na
+                    <select class="form__field js-currency2">
+                        <option>PLN</option>
+                        <option>USD</option>
+                        <option>EUR</option>
+                    </select>
+                </p>
+                <p class="form__paragraph">
+                    <label>
+                        Kwota: <input class="form__field js-amount"
+                            type="number">
+                    </label>
+                </p>
+                <button class="form__button js-button">Przelicz!</button>
+            </fieldset>
+            <div class="form__message form__message--hide js-messageBox">
+            </div>
+        </form>
+    </body>
+</html>
