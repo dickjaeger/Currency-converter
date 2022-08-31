@@ -10,10 +10,9 @@
     text-align: center;
     margin:15px 15px;
     padding: 10px;
-    color: chocolate;
-    border: solid 2px #999;
+    color: white;
     border-radius: 5px;
-    background-color: white;
+    background-color: chocolate;
 }
 
 .form__fieldset {
